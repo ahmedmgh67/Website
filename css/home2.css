@@ -1,0 +1,519 @@
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+@media (min-width: 768px)
+{
+.container {
+    width: 713px;
+}
+}
+@media (min-width: 992px)
+{
+.container {
+    width: 932px;
+}
+}
+@media (min-width: 1200px)
+{
+.container {
+    width: 1140px;
+}
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #337ab7;
+    background:none;
+    border-bottom:1px solid #337ab7 ; 
+}
+.navbar-default .navbar-nav > li > a {
+     color: #FFF; 
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding:25px;
+    transition:.5s ease 
+}
+.navbar-default .navbar-nav > li > a:hover {
+     color: #337ab7;
+    border-bottom: 1px solid #337ab7;
+    padding-left: 5px;
+    font-size: 25px;
+}
+.navbar-brand > img {
+    margin-top:-30px;
+    height: 100px;
+    transition: .5s ease-in
+}
+.navbar-brand > img:hover
+{
+    width: 130px;
+    
+}
+.myCarouselServices
+{
+    background-color:#000;
+    background-size: 100% 100%; 
+    height: 530px;
+    position: relative; 
+}
+.myCarouselServicesUser
+{
+    background-color:aqua;
+    background-size: 100% 100%; 
+    height: 530px;
+    position: relative; 
+}
+.myServicesh1
+{
+    color: #337ab7 ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,-100%);
+    font-size: 5em ; 
+    font-weight: bold;
+    transition: .5s ease
+}
+.myServicesh1User
+{
+    color: #337ab7 ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,-50%);
+    font-size: 5em ; 
+    font-weight: bold;
+    transition: .5s ease
+}
+@media (max-width:1200px)
+{
+    .myServicesh1
+    {
+        font-size: 4em ;
+    }
+}
+@media (max-width:1200px)
+{
+    .myServicesh1User
+    {
+        font-size: 4em ;
+    }
+}
+.myServicesh1:hover
+{
+    transform:translate(-50%,-110%);
+}
+.myServivesp
+{
+    color: #FFF ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-47%,-10%);
+    font-size: 1.7em ;
+    transition: .5s ease
+}
+@media (max-width:1200px)
+{
+    .myServivesp
+    {
+        font-size: 1.1em;
+    }
+    
+}
+.myServivesp:hover
+{
+    transform:translate(-47%,-20%);    
+}
+.myServisep
+{
+    color: #999 ;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-49%,170%);
+    font-size: 1em ;  
+}
+@media (max-width:1200px)
+{
+    .myServisep
+    {
+        font-size: .7em
+    }
+    
+}
+.myServisep:hover
+{
+    transform:translate(-49%,190%);
+    transition: .5s ease
+
+}
+.IconS
+{
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,110%);
+    font-size: 35px ;    
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.myCarouselAndForm
+{
+    position: relative ;
+    height: 530px; 
+    width: 100% ; 
+    border-bottom: 1px solid #000 ; 
+    display: none;
+     
+}
+
+.myRegisterForm
+{
+    position: absolute ; 
+    z-index:1;
+    height: 100%;
+    width:100% ; 
+    display:none
+}
+.myFormBehindCarousel
+{
+    position: absolute ; 
+    z-index:2;
+    height: 100%;
+    width:100% ; 
+    display:none;
+}
+.myCarousel
+{
+    position:absolute;
+    z-index:3; 
+    width:100% ; 
+    height: 100% ; 
+}
+.myformModel {
+    margin-top: 21px;
+}
+.forgetPassword
+{
+   float:right;
+   font-size: 80%;
+   position:relative; 
+   top:-10px 
+}
+.panel-body
+{
+    padding-top:30px    
+}
+.myLoginImg {
+    width: 52px;
+    height: 55px;
+    margin-top: 10px;
+   -webkit-border-radius: 50%;
+    -o-border-radius:50% ;
+    -moz-border-radius:50% ;
+    border-radius: 50%;
+}
+
+.btnLogOut
+{
+    margin-top: 18px;
+}
+
+@media (max-width: 767px)
+{
+.myLoginImg {
+    margin-left: 206px;
+    margin-top: -60px;
+
+    }
+.btnLogOut{
+    margin-left: 195px;
+    margin-top: -37px;
+    }  
+}
+#aboutUs
+{
+    display: none;
+}
+.ourProjects h1
+{
+    text-align: center ; 
+    padding-bottom:20px;
+    color:#337ab7;
+}
+
+.ourProjects p
+{
+    text-align: center;
+    padding-bottom:10px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+hr
+{
+    width:60px ; 
+    height:5px ;
+    background:#337ab7;
+}
+.hrCommunity
+{
+    display: none
+}
+.myCommunity
+{
+    font-size:30px; 
+    color:#337ab7
+}
+#btnHideMe
+{
+    margin:5px 78px
+}
+@media (max-width:767px)
+{
+    .myCommunity
+    {
+       text-align: center
+    }
+    .hrCommunity
+    {
+        display: block;
+    }
+    #btnHideMe
+    {
+        margin:6px 172px ;
+    }
+
+}
+#aboutUs
+{
+    margin-top:70px;
+    margin-bottom: 50px;
+}
+.pains
+{
+    font-size: 15px ; 
+    font-weight: bold
+}
+.painsSolved
+{
+    font-size: 17px ;
+}
+#myHidenAbout
+{
+  display:none; 
+
+}
+@media(max-width:992px)
+{
+.myAboutImage
+{
+    width:310px
+    
+}
+}
+.myShudel
+{
+    padding:28px;
+    margin-top:10px; 
+}
+.contactUS
+{
+    margin-top: 50px;
+    background-color: #FFF ; 
+}
+.contactUS h3 , .contactUS p 
+{
+    text-align: center
+}
+.ourCalling
+{
+    border-right: 1px solid #333 ; 
+}
+@media(max-width:1000px)
+{
+.ourCalling
+{ 
+    border-right: none 
+}
+}
+.ourCalling p ,.last p
+{
+    color:#00f ; 
+    opacity: .6;
+}
+form
+{
+    margin-bottom: 20px; 
+}
+textarea
+{
+    width:100%;
+    height:150px;
+    margin-bottom: 13px;
+    padding: 10px;
+}
+
+#goUPButton
+{
+    display: none;
+    font-size: 35px;
+    color:#337ab7 ; 
+    position:fixed; 
+    right: 20px ;
+    bottom: 5px ;
+    cursor: pointer
+}
+.myIcons
+{
+    background-color: floralwhite; 
+    width:50px;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    right:0px ;
+    top:430px;
+    opacity:.8;
+    position: fixed ;
+    display: none ;
+    z-index: 99999 ;
+}
+.fab{
+    font-size:35px ;  
+}
+.fa-facebook-square
+{
+    color:#337ab7
+}
+.fa-whatsapp-square
+{
+    color: #25D366;
+}
+.fa-google-plus-square
+{
+    color:#e34033;
+}
+.fa-linkedin
+{
+    color:#FFF; 
+}
+.myStartLink {
+    background-color: #337ab7;
+    padding-left: 43px;
+    padding-right: 38px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 19px;
+    position: absolute ; 
+    top:50% ; 
+    left:50% ; 
+    transform:translate(-50%,248%);
+    text-decoration: none ; 
+    transition: 1s ease  
+}
+.myStartLink:hover
+{
+    text-decoration: none ; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#337ab7 ; 
+    background-color: #FFF;
+}
+.linked
+{
+     color: #337ab7  
+}
+.ico:hover
+{
+    font-size:50px;
+    transition: .5s ease
+}
+.myIcons:hover
+{
+    padding-right:50px;
+    transition: .5s ease
+}
+footer
+{
+    background-color: #333 ;
+    color:#FFF;
+    height: 50px;
+    padding:15px
+}
+#myNavBar,#ourServices,#ourBlogers
+{
+    display: none
+}
+/*VIDEO*/
+
+.myVedio
+{
+    display:block;
+    margin-bottom:70px;
+    background-color: #000;
+    padding: 35px;
+
+}
+/*End Vedio*/
+/*Modal*/
+.mod
+{
+    padding-left:50px;
+    padding-bottom: 26px;
+    background-color: #000;
+}
+table
+{
+    background-color: #FFF;
+}
+/*Table Model*/
+td,th
+{
+    padding-right: 126px;
+    padding-left: 48px;
+    padding-bottom: 16px;
+    text-align: center
+
+}
+th
+{
+    padding-top:19px;
+    padding-bottom: 19px;
+}
+@media(max-width:767px)
+{
+td, th {
+    padding-right: 34px;
+    padding-left: 37px;
+}
+    
+}

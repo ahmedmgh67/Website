@@ -1,0 +1,130 @@
+body
+{
+    background-color: #000 ; 
+    position: relative;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Lobster', cursive;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+.navbar-default {
+    background-color: transparent;
+    border: none ;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #337ab7;
+    background:none;
+}
+.navbar-default .navbar-nav > li > a {
+     color: #FFF; 
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase 
+}
+.navbar-default .navbar-nav > li > a:hover {
+     background-color: #337ab7; 
+}
+
+.navbar-default {
+    margin-top: 35px;
+}
+
+.imgMainPage
+{
+    width: 100%;
+}
+.myContentMain
+{
+    margin-top:130px;
+    margin-bottom: 50px;
+}
+.myStartLink {
+    background-color: #337ab7;
+    padding-left: 43px;
+    padding-right: 38px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration:none; 
+}
+h1
+{
+    color: #FFF ;
+    font-size: 45px;
+    text-transform: capitalize ; 
+}
+p
+{
+    font-size: 20px;
+    color: #999 ;
+    padding-bottom: 35px;
+    text-transform: capitalize  
+}
+.navbar-brand > img {
+    display: block;
+    margin-top:-30px;
+    height: 120px;
+}
+
+
+.myHeadBrandWeb
+{
+    background-color: #FFF;
+    height: 100px;
+}
+
+.myFormReg
+{
+   background-color:azure ; 
+    border-radius: 30px  ; 
+    padding: 20px;
+    height: 500px;
+    width: 500px
+}
+.navbar-default .navbar-toggle {
+    border-color: #163543;
+}
+.navbar-brand > img {
+    display: block;
+    margin-top: -66px;
+    height: 120px;
+}
+.navbar-toggle
+{
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
