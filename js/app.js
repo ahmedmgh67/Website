@@ -42,8 +42,11 @@ function getUserName () {
   })
   .then(data => {
     // Work with JSON data here
-    console.log(data);
-    return data.name;
+    //console.log(data);
+    //console.log(data);
+    a = JSON.parse(data);
+    console.log(a.name[0]);
+    return a.name;
   })
   .catch(err => {
     // Do something for an error here
