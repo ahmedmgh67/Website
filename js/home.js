@@ -1,3 +1,5 @@
+//import Axios from "axios";
+"use strict";
 $(function(){
     $('#status').fadeOut(); // will first fade out the loading animation 
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
@@ -37,12 +39,8 @@ $(function(){
         $('#btnHideMe').click(function(){
             $('#btnShowMore').show(1000);
             $('#myHidenAbout').hide(1000);
-            $('#myPara').css({textAlign:"center"})
-
-            
-        });    
-    
-
+            $('#myPara').css({textAlign:"center"});
+        });
     $('#noAccount').click(function(){
        $('.myFormBehindCarousel').fadeOut(1200);
         $('.myRegisterForm').slideDown(1200);
@@ -59,8 +57,18 @@ $(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myCarousel').slideDown(1200);
     });
-    
 });
 function goUP(){
     window.scrollTo(0,0); 
 };
+
+function logIn(){
+    alert("logging in");
+    var user = document.getElementById("login-username").value;
+    var pass = document.getElementById("login-password").value;
+    Axios.get("https://stacknet-api.herokuapp.com/api/sps").then(data => {
+        console.log(data);
+    }).catch(e => {
+        console.log("error Occured");
+    });
+}
