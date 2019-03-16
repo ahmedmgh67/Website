@@ -1,56 +1,44 @@
  //import Fetch, { fetchUrl } from 'fetch';
  
- document.getElementById("userName").innerHTML= getUserName();
+ document.getElementById("userName").innerHTML = getUserName();
  var username = document.getElementById("login-username");
  var password = document.getElementById("login-password");
-// var loginBu = document.getElementbyId('btn-login');
 
-/*loginBu.addEventListener('click', function a (){
-  alert('login buttton clicked event listener');
-  login();
-});*/
 
-/*function login (){
-  //alert('login buttton clicked function');
-  var user = username.value;
-  var pass = password.value;
+ function getUserName(){
+   $.getJSON("https://stacknet-api.herokuapp.com/api/sps", function (data){
+    var userna = data[0].name;
+    return userna
+   });
+ }
 
-  fetch('https://stacknet-api.herokuapp.com/api/tpa')
-  .then(response => {
-    return response.json()
-  })
-  .then(data => {
-    console.log(data);
-    alert("login began")
-    // Work with JSON data here
-    if (data.username == user){
-      window.location("./dashboard.html")
-    } else {
-      alert("Login Failed");
+function getRequests(){
+  $.getJSON("https://stacknet-api.herokuapp.com/api/requests", function (data){
+    for (let index = 0; index < data.length; index++) {
+      var tpaname = data[i].tpaname;
+      var type = data[i].type;
+      var status  = data[i].status;
     }
   })
-  .catch(err => {
-    // Do something for an error here
+}
+function newRequest(){
+  $.post("https://stacknet-api.herokuapp.com/api/requests", {
+    "tpaname":tpaname,
+    "spname": spaname,
+    "status": status,
+    "notes": nootes,
+    "type": type
+  }, function a (){
+    //This is call back ya abdelrehim aref
+    alert("Succsessful Request")
   })
-  return"Ahmed Gamal";
-  
-} */
-function getUserName () {
-  fetch('https://stacknet-api.herokuapp.com/api/sps')
-  .then(response => {
-    return response.json()
+}
+
+function getCompanies(){
+  $.getJSON("https://stacknet-api.herokuapp.com/api/sps", function (data){
+    for (let index = 0; index < data[0].contractors.length; index++) {
+      var tpaname = data[0].contractors[i];
+      
+    }
   })
-  .then(data => {
-    // Work with JSON data here
-        //console.log(data);
-    //console.log(data);
-    a = JSON.parse(data);
-    console.log(a.name[0]);
-    return a.name;
-  })
-  .catch(err => {
-    // Do something for an error here
-    return "error"
-  })
-  
 }

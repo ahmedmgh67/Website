@@ -49,10 +49,11 @@ $(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myFormBehindCarousel').slideDown(1200);
     });
-        $('#btn-login').click(function(){
-        $('.myFormBehindCarousel').fadeOut(1200);
-        $('.myCarousel').fadeIn(1200);
-    });
+    /*$('#btn-login').click(function(){
+        //$('.myFormBehindCarousel').fadeOut(1200);
+        //$('.myCarousel').fadeIn(1200);
+        logIn();
+    });*/
     $('#btn-signUp').click(function(){
         $('.myRegisterForm').fadeOut(1200);
         $('.myCarousel').slideDown(1200);
@@ -62,7 +63,7 @@ function goUP(){
     window.scrollTo(0,0); 
 };
 
-function logIn(){
+/*function logIn(){
     alert("logging in");
     var user = document.getElementById("login-username").value;
     var pass = document.getElementById("login-password").value;
@@ -70,5 +71,31 @@ function logIn(){
         console.log(data);
     }).catch(e => {
         console.log("error Occured");
+    });
+}*/
+function LogIn (){
+    $.getJSON("https://stacknet-api.herokuapp.com/api/sps",function l (data){
+        var user = document.getElementById("login-username").value;
+        var pass = document.getElementById("login-password").value;
+        console.log(data[0].username + " " + data[0].username);
+        /*for (let index = 0; index < data.length; index++) {
+            if (data[i].username == user && data[i].username) {
+                window.location("dashboard.html");
+            } else {
+                alert (logInfailed);
+            }
+        }*/
+
+    })
+}
+function register () {
+    $.post("https://stacknet-api.herokuapp.com/api/sps", {
+        "username":user,
+        "password":pass,
+        "contractors": [],
+        "balance": "0",
+        "name":name
+    }, function () {
+        // This is the call back ya abdelrahim aref 
     });
 }
